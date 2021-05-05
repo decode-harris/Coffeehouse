@@ -1,5 +1,7 @@
 let map;
 
+let hidden = 'AIzaSyBAlntK_YFdiooM_c_1jd81RIz8o0MNI_A';
+
 function initMap() {
 
     const coords = { lat: -37.914, lng: 144.750 };
