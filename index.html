@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Cafe 2021</title>
+
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="src/css/index.css"> -->
+
+    <!-- scss -->
+    <link rel="stylesheet" href="src/css/output.css">
+    
+    <!-- js [ filter gallery ] -->
+    <script defer src="src/js/index.js"></script>
+
+    <!-- js [ intersection observer] -->
+    <script defer src="src/js/observer.js"></script>
+
+    <!-- js [ goolge maps ] -->
+    <script defer src="src/js/map.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4dff4a55ad.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!-- page -->
+<div id="page">
+
+    <!-- navigation -->
+    <nav class="nav">
+
+        <!-- nav__list [desktop ] -->
+        <ul class="nav__list desktop">
+
+            <!-- items -->
+            <li class="items">
+                <i class="fas fa-mug-hot"></i>
+            </li>
+            <li class="items">home</li>
+            <li class="items">about</li>
+            <li class="items">menu</li>
+            <li class="items">store</li>
+            <li class="items">info</li>
+            <!-- items -->
+
+        </ul>
+        <!-- nav__list [desktop ] -->
+
+        <!-- nav__list [ mobile ] -->
+        <ul class="nav__list mobile">
+            
+            <!-- items -->
+            <li class="items">
+                <i class="fas fa-mug-hot"></i>
+            </li>
+            <li class="items">
+                Coffee
+            </li>
+            <li class="items">
+                <i class="fas fa-bars"></i>
+            </li>
+            <!-- items -->
+
+        </ul>
+        <!-- nav__list [ mobile ] -->
+
+    </nav>
+    <!-- navigation -->
+
+    <!-- homepage -->
+    <header class="header">
+
+        <!-- elmnts -->
+        <div class="elmnts">
+
+            <!-- titles -->
+            <h1 class="desktop">coffee house</h1>
+            <h1 class="mobile">coffee house</h1>
+            <!-- titles -->
+
+            <!-- tag -->
+            <h5 class="desktop">award winning coffee</h5>
+            <h6 class="mobile">award winning coffee</h6>
+            <!-- tag -->
+        
+        </div>
+        <!-- elmnts -->
+
+    </header>
+    <!-- homepage -->
+
+    <!-- main -->
+    <main class="main">
+
+        <!-- content [ about ] -->
+        <section class="content" id="about">
+
+            <!-- elmnts -->
+            <div class="elmnts">
+
+                <!-- title -->
+                <h2 class="desktop">about us</h2>
+                <h3 class="mobile">about us</h3>
+                <!-- title -->
+
+                <!-- tag -->
+                <h5 class="desktop">award winning coffee</h5>
+                <h6 class="mobile">award winning coffee</h6>
+                <!-- tag -->
+
+                <!-- text -->
+                <p class="text desktop">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, facere.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, facere.
+                </p>
+                <p class="text mobile">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, facere.
+                </p>
+                <!-- text -->
+
+            </div>
+            <!-- elmnts -->
+
+        </section>
+        <!-- content [ about ] -->
+
+        <!-- banner [ large ] -->
+        <div class="banner banner-large"></div>
+        <!-- banner [ large ] -->
+
+        <!-- content [ products ] -->
+        <section class="content" id="products">
+
+            <!-- elmnts -->
+            <div class="elmnts">
+
+                <!-- title -->
+                <h2 class="desktop">menu</h2>
+                <h3 class="mobile">menu</h3>
+                <!-- title -->
+
+                <!-- tag -->
+                <h5 class="desktop">what we offer</h5>
+                <h6 class="mobile">what we offer</h6>
+                <!-- tag -->
+
+                <!-- text -->
+                <p class="desktop">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                </p>
+                <p class="mobile">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                </p>
+                <!-- text -->
+            
+            </div>
+            <div class="elmnts">
+                
+                <!-- list -->   
+                <ul class="list">
+
+                    <!-- items -->
+                    <li class="items">
+                        <div class="preview-image">
+                            <img src="src/img/bev.jPEG" alt="beverages">
+                        </div>
+                        <p class="preview-title">
+                            beverages
+                        </p>
+                        
+                    </li>
+                    <li class="items">
+                        <div class="preview-image">
+                            <img src="src/img/food.jPEG" alt="bakery">
+                        </div>
+                        <p class="preview-title">
+                            bakery
+                        </p>
+                    </li>
+                    <li class="items">
+                        <div class="preview-image">
+                            <img src="src/img/take.jPEG" alt="take-away">
+                        </div>
+                        <p class="preview-title">
+                            take-away
+                        </p>
+                    </li>
+                    <!-- items -->
+
+                </ul>
+                <!-- list -->
+
+            </div>
+            <!-- elmnts -->
+
+            <!-- filter wrapper -->
+        <div class="wrapper">
+
+            <!-- list -->
+            <ul class="filter__list">
+
+                <!-- items -->
+                <li class="items active" data-name="all">all</li>
+                <li class="items" data-name="one">one</li>
+                <li class="items" data-name="two">two</li>
+                <li class="items" data-name="three">three</li>
+                <!-- items -->
+            </ul>
+            <!-- list -->
+
+            <!-- gallery -->
+            <ul class="gallery">
+
+                <!-- panels -->
+                <li class="panels" data-name="one">
+
+                    1
+
+                    <!-- image -->
+                    <img src="" alt="" srcset="">
+                    <!-- image -->
+                </li>
+                <li class="panels" data-name="two">
+
+                    2
+
+                    <!-- image -->
+                    <img src="" alt="" srcset="">
+                    <!-- image -->
+                </li>
+                <li class="panels" data-name="three">
+
+                    3
+
+                    <!-- image -->
+                    <img src="" alt="" srcset="">
+                    <!-- image -->
+                </li>
+                <li class="panels" data-name="one">
+
+                    1
+
+                    <!-- image -->
+                    <img src="" alt="" srcset="">
+                    <!-- image -->
+                </li>
+                <li class="panels" data-name="two">
+
+                    2
+
+                    <!-- image -->
+                    <img src="" alt="" srcset="">
+                    <!-- image -->
+                </li>
+                <li class="panels" data-name="three">
+
+                    3
+
+                    <!-- image -->
+                    <img src="" alt="" srcset="">
+                    <!-- image -->
+                </li>
+                <li class="panels" data-name="one">
+
+                    1
+
+                    <!-- image -->
+                    <img src="" alt="" srcset="">
+                    <!-- image -->
+                </li>
+                <li class="panels" data-name="two">
+
+                    2
+
+                    <!-- image -->
+                    <img src="" alt="" srcset="">
+                    <!-- image -->
+                </li>
+                <li class="panels" data-name="three">
+
+                    3
+
+                    <!-- image -->
+                    <img src="" alt="" srcset="">
+                    <!-- image -->
+                </li>
+                <!-- panels -->
+
+            </ul>
+            <!-- gallery -->
+
+        </div>
+        <!-- filter wrapper -->
+        
+        </section>
+        <!-- content [ products ] -->
+
+        <!--  content [ locations ] -->
+        <section class="content" id="locations">
+
+            <!-- elmnts -->
+            <div class="elmnts">
+
+                <!-- title -->
+                <h2 class="desktop">locations</h2>
+                <h3 class="mobile">locations</h3>
+                <!-- title -->
+
+                <!-- tag -->
+                <h5 class="desktop">come say hi</h5>
+                <h6 class="mobile">come say hi</h6>
+                <!-- tag -->
+
+                <!-- text -->
+                <p class="desktop">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                </p>
+                <p class="mobile">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                </p>
+                <!-- text -->
+
+            </div>
+            <div class="elmnts">
+
+                <!-- map -->
+                <div class="map" id="map"></div>
+                <!-- map -->
+
+                <!-- info -->
+                <div class="info">
+                    
+                    <!-- left -->
+                    <div class="left">
+
+                        <!-- info items -->
+                        <h5 class="info-title">location</h5>
+                        <p class="info-text">75 Seagrass Crescent</p>
+                        <p class="info-text">Point Cook</p>
+                        <p class="info-text">3030</p>
+                        <!-- info items -->
+
+                    </div>
+                    <!-- left -->
+
+                    <!-- right -->
+                    <div class="right">
+
+                        <i class="fas fa-map-marker-alt"></i>
+                        
+                    </div>
+                    <!-- right -->
+                    
+
+                </div>
+                <!-- info -->
+                
+            </div>
+            <!-- elmnts -->
+            
+
+        </section>
+        <!--  content [ locations ] -->
+
+        <!-- banner [ medium ] -->
+        <div class="banner banner-medium"></div>
+        <!-- banner [ medium ] -->
+
+        <!-- content [ closing ] -->
+        <section class="content" id="closing">
+
+            <!-- elmnts -->
+            <div class="elmnts">
+
+                <!-- title -->
+                <h2 class="desktop">contact</h2>
+                <h3 class="mobile">contact</h3>
+                <!-- title -->
+
+                <!-- tag -->
+                <h5 class="desktop">get in touch</h5>
+                <h6 class="mobile">get in touch</h6>
+                <!-- tag -->
+
+                <!-- text -->
+                <p class="desktop">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                </p>
+                <p class="mobile">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                </p>
+                <!-- text -->
+
+            </div>
+            <div class="elmnts">
+
+                <!-- social list -->
+                <ul class="social_list">
+
+                    <!-- items -->
+                    <li class="items">facebook</li>
+                    <li class="items">instagram</li>
+                    <li class="items">email</li>
+                    <!-- items -->
+
+                </ul>
+                <!-- social list -->
+
+            </div>
+            <!-- elmnts -->
+
+        </section>
+        <!-- content [ closing ] -->
+
+
+    </main>
+    <!-- main -->
+
+    <!-- footer [ contact ] -->
+    <footer class="footer">
+
+        <!-- elmnts -->
+        <div class="elmnts">
+
+            <!-- title || copyright -->
+            <h5>&copy; Coffee House 2021</h5>
+            <!-- title || copyright -->
+            
+            <!-- text -->
+            <p class="desktop">Designed & developed by C Harris</p>
+            <p class="mobile">Developed by C Harris</p>
+            <!-- text -->
+
+        </div>
+        <!-- elmnts -->
+    
+    </footer>
+    <!-- footer [ contact ] -->
+
+</div>
+<!-- page -->
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAlntK_YFdiooM_c_1jd81RIz8o0MNI_A&callback=initMap&libraries=&v=weekly" async ></script>
+    
+</body>
+</html>

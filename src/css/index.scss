@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*
+    css reset
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    css variables
+*/
+:root {
+
+    // spacing 
+    --sm: 2%;
+    --md: 5%;
+    --lg: 10%;
+
+    // page fonts
+    --font: 'Poppins', sans-serif;
+
+    // page color scheme
+
+    // borders & outlines
+    --wireframe: 2px solid darkblue;
+    --debugging: 2px solid darkred;
+    --component: 2px solid darkgreen;
+}
+
+/*
+    global styles
+*/
+html {
+    font-family: var(--font);
+}
+
+/* */
+
+/*
+    navigation component
+*/
+nav {
+    // display props
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // dimensions & spacing
+    height: 10vh;
+    width: 100%;
+    padding: var(--md);
+    
+    // position props
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    // background props
+    background: transparent;
+
+    .nav__list {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        width: 100%;
+    }
+    .items {
+
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15rem;
+        
+        
+    }
+
+    // remove nav__list desktop from mobile devices
+    .nav__list.desktop {display: none;}
+}
+
+/*
+    header component
+*/
+header {
+    
+    // dimensions & spacing
+    height: 100vh;
+    width: 100%;
+    
+    // background image props
+    background-image: url(../img/landing.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .elmnts {
+        // display props
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        // dimensions & spacing
+        padding: var(--sm);
+        height: 100%;
+
+        // component styles
+        background: rgba($color: #000000, $alpha: 0.4);
+        color: #FFF;
+
+        position: sticky;
+    }
+    h1 {
+        font-size: 2.65rem;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+
+        // position: sticky;
+        // top: 45%;
+        // z-index: 1;
+
+    }
+    h6 {
+        font-size: 1rem;
+        font-style: italic;
+
+
+        // position: sticky;
+        // z-index: 1;
+        // top: 55%;
+        
+    }
+}
+
+/*
+
+*/
+main {
+    padding: var(--sm);
+    z-index: 999;
+}
+
+/*
+
+*/
+section {
+
+    // display props
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // dimensions & spacing
+    height: 100vh;
+    width: 100%;
+    margin-bottom: var(--md);
+
+    // dev
+    border: var(--wireframe);
+
+    .elmnts {
+        // display props
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        // dimensions & spacing
+        max-height: 50vh;
+        height: 100%;
+        width: 100%;
+
+        // dev
+        border: var(--debugging);
+    }
+}
+
+
+
+img {
+    max-width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    filter gallery
+
+    contains :
+        -wrapper
+        -filter__list
+        -gallery
+        -panels
+
+*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--sm);
+
+    .gallery {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        padding: var(--md);
+        min-height: 50vh;
+        max-width: 700px;
+        background: #1a1616;
+    }
+    .panels {
+        outline: 2px solid #FFF;
+        color: #FFF;
+        width: 100%;
+        max-height: 100px;
+    }
+}
+
+
+/*
+    intersection observer elements
+*/
+.nav-scrolled {
+    box-shadow: 2px 2px #000;
+    background: #FFF;
+    z-index: 999;
+
+    color: #000;
+}
+
+
+/*
+    remove desktop css classes
+    display mobile css classes
+*/
+.desktop {display: none;}
+.mobile {display: block;}
+
+/*
+    media query [ desktop devices ]
+*/
+@media (min-width: 760px) {
+
+    /*
+    display desktop css classes
+    remove mobile css classes
+    */
+    .desktop {display: block;}
+    .mobile {display: none;}
+
+}
