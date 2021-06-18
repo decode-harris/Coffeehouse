@@ -6,6 +6,6 @@ Showcasing
   <br>
   semantic markup
   <br>
-  SASS implementationV
+  SASS implementation
   <br>
-  anilla Javascript
+  Vanilla Javascript
