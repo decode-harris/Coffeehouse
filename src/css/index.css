@@ -113,7 +113,7 @@ header .overlay {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(67, 37, 14, 0.2);
   color: #FFF;
   height: 100%;
   padding-left: var(--md);
@@ -240,16 +240,18 @@ section .btn:hover {
 }
 section .banner {
   background-image: url("/src/img/banner.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50vh;
   width: 100%;
   border: 2px solid #000;
+}
+section .banner img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /*
@@ -270,6 +272,7 @@ main {
   padding: var(--md);
   min-height: 100vh;
   background: var(--color-main);
+  background-image: url(/src/img/banner1.jpg);
   color: #FFF;
   text-align: center;
   border: var(--component);
@@ -283,8 +286,8 @@ main .btn {
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
-  background: transparent;
-  border: 2px solid #FFF;
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid #000;
   color: #FFF;
   transition: all 120ms ease-in;
 }
@@ -325,6 +328,7 @@ main .list .title {
   color: #764709;
 }
 main .list .tagline {
+  color: #764709;
   font-size: 0.95rem;
   text-transform: capitalize;
   text-decoration: underline;
@@ -339,6 +343,8 @@ main .list .list-text {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: left;
+  background: rgba(0, 0, 0, 0.5);
+  padding: var(--md);
 }
 main .list img {
   background-position: center;
