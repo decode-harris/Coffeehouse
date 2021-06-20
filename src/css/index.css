@@ -273,6 +273,7 @@ main {
   min-height: 100vh;
   background: var(--color-main);
   background-attachment: fixed;
+  background-position: bottom left;
   color: #FFF;
   text-align: center;
   border: var(--component);
