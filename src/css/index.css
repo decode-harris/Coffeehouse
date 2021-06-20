@@ -49,15 +49,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-.text {
-  font-family: var(--font-text);
-}
-
 /*
     nav component
 
     sticky element : top of page
     enables home & menu buttons
+
+    contains
+
+        - button [ btn ]
+        - h3 [ title ]
 
 */
 nav {
@@ -68,40 +69,63 @@ nav {
   top: 0;
   left: 0;
   height: 10vh;
+  min-height: 10vh;
   width: 100%;
   padding: var(--md);
   background: #FFF;
+  z-index: 150;
   border: var(--wireframe);
-  z-index: 100;
 }
-nav .btn {
-  font-size: 1.2rem;
-  height: 40px;
-  min-width: 60px;
-  background: transparent;
-  border: none;
-}
-nav .btn i {
-  color: #000;
-}
-nav h3 {
+nav .title {
   color: #000;
   text-transform: uppercase;
   text-decoration: underline;
   letter-spacing: 0.12rem;
   font-size: 0.85rem;
 }
+nav .btn {
+  background: transparent;
+  border: none;
+  height: 40px;
+  min-width: 60px;
+}
+nav .btn i {
+  font-size: 1.2rem;
+  color: #000;
+}
 
+/*
+    header component
+    landing page element : full screen video
+
+    contains
+        - div [ header video ]
+        - video [ video ] source : pour . mp4
+        - h1 [ title ] 
+        - h6 [ tagline ]
+        - btn [ btn ] : enter button
+*/
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: var(--md);
   color: #000;
   height: 100vh;
   width: 100%;
   position: relative;
   border: var(--wireframe);
+}
+header .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #FFF;
+  height: 100%;
+  width: 100%;
+  padding-left: var(--md);
 }
 header .header-video {
   position: absolute;
@@ -136,20 +160,43 @@ header .tagline {
   z-index: 2;
 }
 header .btn {
-  border: 2px solid #000;
-  height: 50px;
-  font-size: 0.95rem;
+  border: 2px solid #FFF;
+  background: transparent;
+  font-size: 0.75rem;
+  letter-spacing: 0.051rem;
+  height: 40px;
+  max-width: 120px;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  max-width: 140px;
+  transition: all 120ms ease-out;
   width: 100%;
   z-index: 2;
 }
-header a {
+header .btn:hover {
+  background: #FFF;
+  transition: all 200ms ease-in;
+}
+header .btn:hover a {
   color: #000;
+}
+header a {
+  color: #FFF;
+  height: 100%;
   text-decoration: none;
+  width: 100%;
 }
 
+/*
+    sections component
+
+    information content containers
+
+    contains 
+        - h2 [ title ]
+        -h6 [ tagline ]
+        - p [ text ]
+        - button [ btn ]
+        - div [ banner ]
+*/
 section {
   display: flex;
   justify-content: center;
@@ -177,21 +224,21 @@ section .text {
   font-size: 0.95rem;
   letter-spacing: 0.1rem;
   line-height: 1.5;
-  padding: var(--sm);
   margin-bottom: 50px;
+  padding: var(--sm);
 }
 section .btn {
+  background: var(--color-main);
   border: 2px solid #000;
+  color: #FFF;
   font-size: 0.95rem;
   letter-spacing: 0.1rem;
-  text-transform: uppercase;
   height: 50px;
-  max-width: 140px;
-  width: 100%;
-  background: var(--color-main);
-  color: #FFF;
   margin-bottom: 50px;
+  max-width: 140px;
+  text-transform: uppercase;
   transition: 200ms all ease-in;
+  width: 100%;
 }
 section .btn:hover {
   background: #FFF;
@@ -199,16 +246,16 @@ section .btn:hover {
   transition: 200ms all ease-in;
 }
 section .banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  width: 100%;
   background-image: url("/src/img/banner-medium.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
   border: 2px solid #000;
 }
 
@@ -384,7 +431,6 @@ footer .items {
 }
 footer .items a {
   color: #000;
-  animation-name: bounce;
   animation-duration: 1.3s;
   animation-iteration-count: infinite;
   transition: all 200ms ease-in;

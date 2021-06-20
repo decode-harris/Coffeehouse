@@ -43,12 +43,10 @@
 html {
     scroll-behavior: smooth;
 }
-// html {
-//     // font-family: --f;    
-// }
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--font-titles);
 }
+
 /*
     page wrapper
     confines all app components
@@ -65,14 +63,17 @@ h1,h2,h3,h4,h5,h6 {
     min-height: 100vh;
     width: 100%;
 }
-.text { 
-    font-family: var(--font-text);
-}
+
 /*
     nav component
 
     sticky element : top of page
     enables home & menu buttons
+
+    contains
+
+        - button [ btn ]
+        - h3 [ title ]
 
 */
 nav {
@@ -89,46 +90,55 @@ nav {
     
     // dimensions & spacing
     height: 10vh;
+    min-height: 10vh;
     width: 100%;
     padding: var(--md);
 
     // component styles
     background: #FFF;
-    
+    z-index: 150;
+
     // dev
     border: var(--wireframe);
 
-    z-index: 100;
-
-    .btn {
-
-        font-size: 1.2rem;
-        height: 40px;
-        min-width: 60px;
-
-        background: transparent;
-        border: none;
-
-        // dev
-        // border: var(--debugging);
-    }
-    .btn i {
-        color: #000;
-    }
-    h3 {
+    // navigation [ title ]
+    .title {
         color: #000;
         text-transform: uppercase;
         text-decoration: underline;
         letter-spacing: 0.12rem;
         font-size: 0.85rem;
     }
+    // navigation [ btn ]
+    .btn {
+        background: transparent;
+        border: none;
+        height: 40px;
+        min-width: 60px;
+    }
+    .btn i {
+        font-size: 1.2rem;
+        color: #000;
+    }
+    
 
 }
+
+/*
+    header component
+    landing page element : full screen video
+
+    contains
+        - div [ header video ]
+        - video [ video ] source : pour . mp4
+        - h1 [ title ] 
+        - h6 [ tagline ]
+        - btn [ btn ] : enter button
+*/
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: var(--md);
     color: #000;
     height: 100vh;
     width: 100%;
@@ -137,6 +147,23 @@ header {
     // dev
     border: var(--wireframe);
 
+    // header overlay [ overlay ]
+    .overlay {
+        background: rgba($color: #000000, $alpha: 0.5);
+        z-index: 100;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        color: #FFF;
+        height: 100%;
+        width: 100%;
+
+        padding-left: var(--md);
+    }
+    // header wrapper [ header video ]
     .header-video {
         position: absolute;
         top: 0;
@@ -146,6 +173,7 @@ header {
         width: 100%;
         max-height: 100%;
     }
+    // header wrapper [ video ]
     video {
         position: sticky;
         top: 0;
@@ -158,6 +186,8 @@ header {
         
         z-index: 1;
     }
+
+    // header overlay [ title ]
     .title {
         font-size: 2.2rem;
         letter-spacing: 0.2rem;
@@ -165,6 +195,7 @@ header {
 
         z-index: 2;
     }
+    // header overlay [ tagline ]
     .tagline {
         font-size: 0.95rem;
         font-style: italic;
@@ -175,31 +206,52 @@ header {
 
         z-index: 2;
     }
+    // header overlay [ button ]
     .btn {
-        border: 2px solid #000;
-        height: 50px;
-        font-size: 0.95rem;
+        border: 2px solid #FFF;
+        background: transparent;
+        font-size: 0.75rem;
+        letter-spacing: 0.051rem;
+        height: 40px;
+        max-width: 120px;
         text-transform: uppercase;
-        letter-spacing: 0.1rem;
-        max-width: 140px;
-        width: 100%;
-
+        transition: all 120ms ease-out;
+        width: 100%;    
         z-index: 2;
     }
-    a {
-        color: #000;
-        text-decoration: none;
+    .btn:hover {
+        background: #FFF;
+        transition: all 200ms ease-in;
     }
-
+    .btn:hover a {
+        color: #000;
+    }
+    a {
+        color: #FFF;
+        height: 100%;
+        text-decoration: none;
+        width: 100%;
+    }
 }
-// information sections
+
+/*
+    sections component
+
+    information content containers
+
+    contains 
+        - h2 [ title ]
+        -h6 [ tagline ]
+        - p [ text ]
+        - button [ btn ]
+        - div [ banner ]
+*/
 section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-
     z-index: 2;
     
     .title {
@@ -221,44 +273,39 @@ section {
         font-size: 0.95rem;
         letter-spacing: 0.1rem;
         line-height: 1.5;
-        padding: var(--sm);
         margin-bottom: 50px;
+        padding: var(--sm);
     }
     .btn {
+        background: var(--color-main);
         border: 2px solid #000;
+        color: #FFF;
         font-size: 0.95rem;
         letter-spacing: 0.1rem;
-        text-transform: uppercase;
         height: 50px;
-        max-width: 140px;
-        width: 100%;
-
-        background: var(--color-main);
-
-        color: #FFF;
         margin-bottom: 50px;
-
+        max-width: 140px;
+        text-transform: uppercase;
         transition: 200ms all ease-in;
+        width: 100%;
     }
     .btn:hover {
         background: #FFF;
         color: var(--color-main);
         transition: 200ms all ease-in;
     }
+    // section [ banner ] element
     .banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        width: 100%;
         background-image: url('/src/img/banner-medium.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-    
-        // height: 30vh;
-    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
         border: 2px solid #000;
     }
 }
@@ -399,7 +446,6 @@ main {
     }
 }
 
-
 /*
     footer component
 
@@ -486,7 +532,7 @@ footer {
     .items a {
         color: #000;
 
-        animation-name: bounce;
+        // animation-name: bounce;
         animation-duration: 1.3s;
         animation-iteration-count: infinite;
 
