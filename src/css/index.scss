@@ -318,7 +318,8 @@ main {
 
     // component props
     background: var(--color-main);
-    background-image: url(/src/img/banner1.jpg);
+    background-attachment: fixed;
+    // background-image: url(/src/img/banner1.jpg);
     color: #FFF;
     text-align: center;
 

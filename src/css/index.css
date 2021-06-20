@@ -272,7 +272,7 @@ main {
   padding: var(--md);
   min-height: 100vh;
   background: var(--color-main);
-  background-image: url(/src/img/banner1.jpg);
+  background-attachment: fixed;
   color: #FFF;
   text-align: center;
   border: var(--component);
