@@ -239,7 +239,7 @@ section .btn:hover {
   transition: 200ms all ease-in;
 }
 section .banner {
-  background-image: url("./src/img/banner.jpg");
+  background-image: url("src/img/banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
