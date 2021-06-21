@@ -20,10 +20,13 @@
     <!-- <script defer src="src/js/observer.js"></script> -->
 
     <!-- js [ goolge maps ] -->
-    <!-- <script defer src="src/js/map.js"></script> -->
+    <script defer src="src/js/map.js"></script>
 
     <!-- js [ navigation ] -->
     <script defer src="src/js/nav.js"></script>
+
+    <!-- js [ modal ] -->
+    <script defer src="src/js/modal.js"></script>
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/4dff4a55ad.js" crossorigin="anonymous"></script>
@@ -37,7 +40,7 @@
     <nav class="nav" id="nav">
 
         <!-- btn event [ home ] -->
-        <button class="btn" id="btn-home">
+        <button class="btn" id="button-home">
             <!-- link [ home ] -->
             <a href="#home">
                 <!-- icon [ mug ] -->
@@ -53,7 +56,7 @@
         <!-- title -->
         
         <!-- btn event [ menu ] -->
-        <button class="btn" id="btn-menu">
+        <button class="btn" id="button-menu">
             <!-- icon [ menu ] -->
             <i class="fas fa-bars"></i>
             <!-- icon [ menu ] -->
@@ -62,6 +65,8 @@
 
         <!-- nav [ list ] -->
         <ul class="list">
+
+            <!-- button [ exit ] -->
 
             <!-- items -->
             <li class="items">home</li>
@@ -79,17 +84,17 @@
 
     <!-- header -->
     <header class="header" id="home">
-        <!-- overlay -->
-        <div class="overlay">
 
-            <!-- titles -->
+        <!-- elmnts -->
+        <div class="elmnts">
+
+            <!-- title & tagline -->
             <h1 class="title">coffee house</h1>
-            <!-- titles -->
-
-            <!-- tag -->
             <h5 class="tagline">award winning coffee</h5>
-            <!-- tag -->
+            <!-- title & tagline -->
 
+        </div>
+        <div class="elmnts">
             <!-- btn [ enter ] -->
             <button class="btn" id="btn-enter">
                 <!-- link [ information ] -->
@@ -100,48 +105,75 @@
                 </button>
             <!-- btn [ enter ] -->
         </div>
-        <!-- overlay -->
+        <div class="elmnts">
 
-        <!-- header video -->
-        <div class="header-video">
-
-            <!-- video background -->
-            <video autoplay playsinline muted loop id="bg-video" src="src/media/pour.mp4"></video>
-            <!-- video background -->
-
+            <!-- list -->
+            <ul class="list">
+                <!-- items -->
+                <li class="items">
+                    <!-- img -->
+                    <img src="src/img/header-sml-left.jpg" alt="header small left" class="img">
+                    <!-- img -->
+                </li>
+                <li class="items">
+                    <!-- img -->
+                    <img src="src/img/header-sml-center.jpg" alt="header small center" class="img">
+                    <!-- img -->
+                </li>
+                <li class="items">
+                    <!-- img -->
+                    <img src="src/img/header-sml-right.jpg" alt="header small right" class="img">
+                    <!-- img -->
+                </li>
+                <!-- items -->
+            </ul>
+            <!-- list -->
         </div>
-        <!-- header video -->
-    
+        <!-- elmnts -->
+
+        <!-- video background -->
+        <video autoplay playsinline muted loop id="bg-video" src="src/media/pour.mp4"></video>
+        <!-- video background -->
+        
     </header>
     <!-- header -->
 
     <!-- content [ information ] -->
     <section class="content" id="information">
 
-        <!-- title & tagline -->
-        <h2 class="title">welcome</h2>
-        <h6 class="tagline">to coffeehouse cafe</h6>
-        <!-- title & tagline -->
-        
-        <!-- text -->
-        <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-        </p>
-        <!-- text -->
+        <!-- elmnts -->
+        <div class="elmnts">
 
-        <!-- text -->
-        <p class="text" id="more">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-        </p>
-        <!-- text -->
-        
-        <!-- btn [ ] -->
-        <button class="btn" id="button-more">more</button>
-        <!-- btn [ ] -->
+            <!-- title & tagline -->
+            <h2 class="title">welcome</h2>
+            <h6 class="tagline">to coffeehouse cafe</h6>
+            <!-- title & tagline -->
+            
+            <!-- text -->
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                
+            </p>
+            <!-- text -->
+        </div>
+        <div class="elmnts">
+
+            <!-- img [ more ] -->
+            <img src="src/img/information.jpg" alt="information showcase" class="img">
+            <!-- img [ more ] -->
+
+            <!-- text [ more ] -->
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+            </p>
+            <!-- text [ more ] -->
+
+        </div>
+        <!-- elmnts -->
     
     </section>
     <!-- content [ information ] -->
@@ -165,9 +197,16 @@
             </li>
             <li class="items">
                 <!-- text -->
-                <p class="list-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias qui quaerat dolore
+                    delectus corrupti corporis!
+                    
+                    <!-- text [ desktop ] -->
+                    <span class="desktop">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus deserunt
+                        ea? Veniam, iusto veritatis!
+                    </span>
+                    <!-- text [ desktop ] -->
                 </p>
                 <!-- text -->
             </li>
@@ -183,7 +222,7 @@
             </li>
             <li class="items">
                 <!-- info button -->
-                <button class="btn" id="link-info">info</button>
+                <button class="btn modal-btn" id="link-info">info</button>
                 <!-- info button -->
             </li>
             <!-- items -->
@@ -206,12 +245,19 @@
                 <!-- image -->
             </li>
             <li class="items">
-                <!-- list text -->
-                <p class="list-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                <!-- text -->
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias qui quaerat dolore
+                    delectus corrupti corporis!
+                    
+                    <!-- text [ desktop ] -->
+                    <span class="desktop">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus deserunt
+                        ea? Veniam, iusto veritatis!
+                    </span>
+                    <!-- text [ desktop ] -->
                 </p>
-                <!-- list text -->
+                <!-- text -->
             </li>
             <li class="items">
                 <!-- image -->
@@ -225,7 +271,7 @@
             </li>
             <li class="items">
                 <!-- menu button -->
-                <button class="btn" id="link-menu">menu</button>
+                <button class="btn modal-btn" id="link-menu">menu</button>
                 <!-- menu button -->        
             </li>
             <!-- items -->
@@ -237,7 +283,7 @@
             <!-- items -->
             <li class="items">
                 <!-- title & tag -->
-                <h2 class="title">locations</h2>
+                <h2 class="title">service</h2>
                 <h6 class="tagline">dine-in or take-away</h6>
                 <!-- title & tag -->
             </li>
@@ -247,12 +293,19 @@
                 <!-- image -->
             </li>
             <li class="items">
-                <!-- list text -->
-                <p class="list-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                <!-- text -->
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias qui quaerat dolore
+                    delectus corrupti corporis!
+                    
+                    <!-- text [ desktop ] -->
+                    <span class="desktop">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus deserunt
+                        ea? Veniam, iusto veritatis!
+                    </span>
+                    <!-- text [ desktop ] -->
                 </p>
-                <!-- list text -->
+                <!-- text -->
             </li>
             <li class="items">
                 <!-- image -->
@@ -265,13 +318,30 @@
                 <!-- image -->
             </li>
             <li class="items">
-                <!-- maps button -->
-                <button class="btn" id="link-maps">maps</button>
-                <!-- maps button -->
+                <!-- hours button -->
+                <button class="btn modal-btn" id="link-hours">hours</button>
+                <!-- hours button -->
             </li>
             <!-- items -->
         </ul>
         <!-- list [ location ] -->
+
+        <!-- modal -->
+        <article class="modal">
+
+            <h4 id="modal-title">modal title</h4>
+            <h6 id="modal-tagline">modal tagline</h6>
+
+            <p id="modal-text">
+                MODAL TEXT
+
+                <br>
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, voluptate?
+            </p>
+
+        </article>
+        <!-- modal -->
     
     </main>
     <!-- main -->
@@ -279,65 +349,85 @@
     <!-- footer -->
     <footer class="footer">
 
-        <!-- banner -->
-        <!-- <div class="banner"></div> -->
-        <!-- banner -->
+        <!-- elmnts -->
+        <div class="elmnts">
 
-        <!-- title & tag -->
-        <h2 class="title">contact</h2>
-        <h6 class="tagline">get in touch</h6>
-        <!-- title & tag -->
+            <!-- title & tag -->
+            <h2 class="title">contact</h2>
+            <h6 class="tagline">get in touch</h6>
+            <!-- title & tag -->
 
-        <!-- text -->
-        <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
-        </p>
-        <!-- text -->
+            <!-- text -->
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+            </p>
+            <!-- text -->
 
-        <!-- button [ form ] -->
-        <button class="btn" id="button-form">form</button>
-        <!-- button [ form ] -->
+            <!-- button [ form ] -->
+            <button class="btn mobile" id="maps">maps</button>
+            <!-- button [ form ] -->
+
+        </div>
+        <div class="elmnts">
+
+            <!-- maps wrapper -->
+            <div class="maps">
+                <!-- google [ maps ] -->
+                <div class="map" id="map"></div>
+                <!-- google [ maps ] -->
+
+                <!-- business address -->
+                <div class="address">
+                    <p class="sub-text">
+                        75 Seagrass Crescent
+                        <br>
+                        Point Cook
+                        <br>
+                        Melbourne  3030
+                    </p>
+                </div>
+                <!-- business address -->
+            </div>
+            <!-- maps wrapper -->
         
-        <!-- list -->
-        <ul class="list">
+        </div>
+        <div class="elmnts">
 
-            <!-- items -->
-            <li class="items">
-                <!-- link [ facebook ] -->
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                    <!-- icon -->
-                    <i class="fab fa-facebook-square"></i>
-                    <!-- icon -->
-                </a>
-                <!-- link [ facebook ] -->
-            </li>
-            <li class="items">
-                <!-- link [ email ] -->
-                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
-                    <!-- icon -->
-                    <i class="fas fa-envelope-square"></i>
-                    <!-- icon -->
-                </a>
-                <!-- link [ email ] -->
-            </li>
-            <li class="items">
-                <!-- link [ instagram ] -->
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                    <!-- icon -->
-                    <i class="fab fa-instagram-square"></i>
-                    <!-- icon -->
-                </a>
-                <!-- link [ instagram ] -->
-            </li>
-            <!-- items -->
-
-        </ul>
-        <!-- list -->
-
-        <!-- sign -->
-        <div class="sign">
-
+            <!-- list -->
+            <ul class="list">
+                <!-- items -->
+                <li class="items">
+                    <!-- link [ facebook ] -->
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <!-- icon -->
+                        <i class="fab fa-facebook-square"></i>
+                        <!-- icon -->
+                    </a>
+                    <!-- link [ facebook ] -->
+                </li>
+                <li class="items">
+                    <!-- link [ email ] -->
+                    <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                        <!-- icon -->
+                        <i class="fas fa-envelope-square"></i>
+                        <!-- icon -->
+                    </a>
+                    <!-- link [ email ] -->
+                </li>
+                <li class="items">
+                    <!-- link [ instagram ] -->
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <!-- icon -->
+                        <i class="fab fa-instagram-square"></i>
+                        <!-- icon -->
+                    </a>
+                    <!-- link [ instagram ] -->
+                </li>
+                <!-- items -->
+            </ul>
+            <!-- list -->
+            
             <!-- title || copyright -->
             <h5 class="subtitle">&copy; Coffee House 2021</h5>
             <!-- title || copyright -->
@@ -349,8 +439,10 @@
             </p>
             <!-- text -->
 
+
+
         </div>
-        <!-- sign -->
+        <!-- elmnts -->
     
     </footer>
     <!-- footer -->
@@ -358,7 +450,8 @@
 </div>
 <!-- page -->
 
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAlntK_YFdiooM_c_1jd81RIz8o0MNI_A&callback=initMap&libraries=&v=weekly" async ></script>
 
-    
 </body>
 </html>
