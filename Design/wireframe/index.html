@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Resonance [ wireframe ]</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- js -->
+    <script defer src="../../src/js/index.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4dff4a55ad.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- page -->
+<div class="page">
+
+    <!-- header -->
+    <header class="header">
+        <!-- logo [ center ] -->
+        <div class="logo"></div>
+        <!-- logo [ center ] -->
+
+        <!-- button [ menu ] -->
+        <button class="btn" id="menu">menu</button>
+        <!-- button [ menu ] -->
+
+    </header>
+    <!-- header -->
+
+    <!-- nav -->
+    <nav>
+        <!-- list -->
+        <ul class="list">
+            <!-- items -->
+            <li class="items"><a href="">home</a></li>
+            <li class="items"><a href="">menu</a></li>
+            <li class="items"><a href="">shop</a></li>
+            <!-- items -->
+        </ul>
+        <!-- list -->
+    </nav>
+    <!-- nav -->
+
+    <!-- section [ landing ] -->
+    <section class="wrapper" id="landing">
+
+        <!-- article [ content ] -->
+        <article class="content">
+
+            <!-- lrg title -->
+            <h1>
+                <!-- desktop [ hidden on mobile ] -->
+                <span class="desktop">cafe </span>
+                <!-- desktop [ hidden on mobile ] -->
+                res<br class="mobile">ona<br class="mobile">nce
+            </h1>
+            <!-- lrg title -->
+
+            <!-- lrg image -->
+            <img src="img-landing.png" alt="landing image" class="img-landing">
+            <!-- lrg image -->
+
+        </article>
+        <!-- article [ content ] -->
+    
+    </section>
+    <!-- section [ landing ] -->
+
+    <!-- section [ introduction ] -->
+    <section class="wrapper" id="introduction">
+
+        <!-- article [ content ] -->
+        <article class="content">
+
+            <!-- elmnts -->
+            <div class="elmnts">
+
+                <!-- title & tagline -->
+                <h2 class="title">welcome</h2>
+                <!-- title & tagline -->
+
+                <!-- img [ more ] -->
+                <img src="img-information.png" alt="information image" class="img-information">
+                <!-- img [ more ] -->
+                
+            </div>
+            <div class="elmnts">
+
+                
+                <h3 >cafe resonance</h3>
+                
+                <!-- text -->
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
+                </p>
+                <!-- text -->
+
+            </div>
+            <!-- elmnts -->
+    
+        </article>
+        <!-- article [ content ] -->
+
+    </section>
+    <!-- section [ introduction ] -->
+
+    <!-- main [ main ] -->
+    <main class="main">
+
+        <!-- title -->
+        <h3>menu</h3>
+        <!-- title -->
+
+        <!-- main ul [ filter ] -->
+        <ul class="filter">
+
+            <!-- items -->
+            <li class="items" data-name="all">all</li>
+            <li class="items active" data-name="one">coffee</li>
+            <li class="items" data-name="two">tea</li>
+            <li class="items" data-name="three">juice</li>
+            <li class="items" data-name="four">pancakes</li>
+            <li class="items" data-name="five">donuts</li>
+            <!-- items -->
+
+        </ul>
+        <!-- main ul [ filter ] -->
+
+        <!-- 
+            main ul [ gallery ]
+
+            becomes interactive with use of filter ul
+
+            contains
+                - ul [ gallery ]
+                    - li [ panels ]
+                        - img [ img ]
+                        - p [ text ]
+                            - span [ name ]
+                            - span [ cost ]
+                            - span [ stat ]
+
+
+        -->
+        <ul class="gallery">
+
+            <!-- gallery [ panels ] : data set [ coffee || one ] -->
+            <li class="panels" data-name='one'>
+                <!-- image -->
+                <img src="src/img/gallery/coffee-1.png" alt="coffee 1">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        coffee
+                    </span>
+                    <span class="cost">
+                        $4.50
+                    </span>
+                    <span class="stat">
+                        latte
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='one'>
+                <!-- image -->
+                <img src="src/img/gallery/coffee-2.png" alt="coffee 2">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        coffee
+                    </span>
+                    <span class="cost">
+                        $4.50
+                    </span>
+                    <span class="stat">
+                        cappuccino
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='one'>
+                <!-- image -->
+                <img src="src/img/gallery/coffee-3.png" alt="coffee 3">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        coffee
+                    </span>
+                    <span class="cost">
+                        $4.50
+                    </span>
+                    <span class="stat">
+                        black
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='one'>
+                <!-- image -->
+                <img src="src/img/gallery/coffee-4.png" alt="coffee 4">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        coffee
+                    </span>
+                    <span class="cost">
+                        $4.50
+                    </span>
+                    <span class="stat">
+                        turkish
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='one'>
+                <!-- image -->
+                <img src="src/img/gallery/coffee-5.png" alt="coffee 5">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        coffee
+                    </span>
+                    <span class="cost">
+                        $3.75
+                    </span>
+                    <span class="stat">
+                        hot chocolate
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='one'>
+                <!-- image -->
+                <img src="src/img/gallery/coffee-6.png" alt="coffee 6">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        coffee
+                    </span>
+                    <span class="cost">
+                        $4.25
+                    </span>
+                    <span class="stat">
+                        iced
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <!-- gallery [ panels ] : data set [ coffee || one ] -->
+
+            <!-- gallery [ panels ] : data set [ teas || two ] -->
+            <li class="panels" data-name='two'>
+                <!-- image -->
+                <img src="src/img/gallery/tea-1.png" alt="teas 1">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        tea
+                    </span>
+                    <span class="cost">
+                        $3.00
+                    </span>
+                    <span class="stat">
+                        english
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='two'>
+                <!-- image -->
+                <img src="src/img/gallery/tea-2.png" alt="teas 2">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        tea
+                    </span>
+                    <span class="cost">
+                        $3.00
+                    </span>
+                    <span class="stat">
+                        black
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='two'>
+                <!-- image -->
+                <img src="src/img/gallery/tea-3.png" alt="teas 3">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        tea
+                    </span>
+                    <span class="cost">
+                        $3.50
+                    </span>
+                    <span class="stat">
+                        green
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='two'>
+                <!-- image -->
+                <img src="src/img/gallery/tea-4.png" alt="teas 4">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        tea
+                    </span>
+                    <span class="cost">
+                        $4.75
+                    </span>
+                    <span class="stat">
+                        iced - lemon
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='two'>
+                <!-- image -->
+                <img src="src/img/gallery/tea-5.png" alt="teas 5">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        tea
+                    </span>
+                    <span class="cost">
+                        $4.75
+                    </span>
+                    <span class="stat">
+                        iced - lime
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='two'>
+                <!-- image -->
+                <img src="src/img/gallery/tea-6.png" alt="teas 6">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        teas
+                    </span>
+                    <span class="cost">
+                        $4.75
+                    </span>
+                    <span class="stat">
+                        bubble
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <!-- gallery [ panels ] : data set [ teas || two ] -->
+
+            <!-- gallery [ panels ] : data set [ juices || three ] -->
+            <li class="panels" data-name='three'>
+                <!-- image -->
+                <img src="src/img/gallery/juices-1.png" alt="juices 1">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        chilled juice
+                    </span>
+                    <span class="cost">
+                        $4.00
+                    </span>
+                    <span class="stat">
+                        orange
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='three'>
+                <!-- image -->
+                <img src="src/img/gallery/juices-2.png" alt="juices 2">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        chilled juice
+                    </span>
+                    <span class="cost">
+                        $4.00
+                    </span>
+                    <span class="stat">
+                        vegetable
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='three'>
+                <!-- image -->
+                <img src="src/img/gallery/juices-3.png" alt="juices 3">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        chilled juice
+                    </span>
+                    <span class="cost">
+                        $4.50
+                    </span>
+                    <span class="stat">
+                        pinapple & grape 
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='three'>
+                <!-- image -->
+                <img src="src/img/gallery/juices-4.png" alt="juices 4">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        chilled juice
+                    </span>
+                    <span class="cost">
+                        $4.50
+                    </span>
+                    <span class="stat">
+                        tomato
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='three'>
+                <!-- image -->
+                <img src="src/img/gallery/juices-5.png" alt="juices 5">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        chilled juice
+                    </span>
+                    <span class="cost">
+                        $4.00
+                    </span>
+                    <span class="stat">
+                        apple
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='three'>
+                <!-- image -->
+                <img src="src/img/gallery/juices-6.png" alt="juices 6">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        chilled juice
+                    </span>
+                    <span class="cost">
+                        $4.00
+                    </span>
+                    <span class="stat">
+                        mango
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <!-- gallery [ panels ] : data set [ juices || three ] -->
+
+            <!-- gallery [ panels ] : data set [ pancakes || four ] -->
+            <li class="panels" data-name='four'>
+                <!-- image -->
+                <img src="src/img/gallery/pancakes-1.png" alt="pancakes 1">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        pancakes
+                    </span>
+                    <span class="cost">
+                        $5.50
+                    </span>
+                    <span class="stat">
+                        banana
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='four'>
+                <!-- image -->
+                <img src="src/img/gallery/pancakes-2.png" alt="pancakes 2">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        pancakes
+                    </span>
+                    <span class="cost">
+                        $5.25
+                    </span>
+                    <span class="stat">
+                        sprinkles
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='four'>
+                <!-- image -->
+                <img src="src/img/gallery/pancakes-3.png" alt="pancakes 3">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        pancakes
+                    </span>
+                    <span class="cost">
+                        $5.25
+                    </span>
+                    <span class="stat">
+                        hot fudge
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='four'>
+                <!-- image -->
+                <img src="src/img/gallery/pancakes-4.png" alt="pancakes 4">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        pancakes
+                    </span>
+                    <span class="cost">
+                        $5.50
+                    </span>
+                    <span class="stat">
+                        strawberry
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='four'>
+                <!-- image -->
+                <img src="src/img/gallery/pancakes-5.png" alt="pancakes 5">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        pancakes
+                    </span>
+                    <span class="cost">
+                        $5.00
+                    </span>
+                    <span class="stat">
+                        traditional
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='four'>
+                <!-- image -->
+                <img src="src/img/gallery/pancakes-6.png" alt="pancakes 6">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                         pancakes
+                    </span>
+                    <span class="cost">
+                        $5.00
+                    </span>
+                    <span class="stat">
+                        choc banana
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <!-- gallery [ panels ] : data set [ pancakes || four ] -->
+
+            <!-- gallery [ panels ] : data set [ donuts || five ] -->
+            <li class="panels" data-name='five'>
+                <!-- image -->
+                <img src="src/img/gallery/donuts-1.png" alt="donuts 1">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        donuts
+                    </span>
+                    <span class="cost">
+                        $4.20
+                    </span>
+                    <span class="stat">
+                        caramel crunch
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='five'>
+                <!-- image -->
+                <img src="src/img/gallery/donuts-2.png" alt="donuts 2">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        donuts
+                    </span>
+                    <span class="cost">
+                        $4.20
+                    </span>
+                    <span class="stat">
+                        strawberry glaze
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='five'>
+                <!-- image -->
+                <img src="src/img/gallery/donuts-3.png" alt="donuts 3">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        donuts
+                    </span>
+                    <span class="cost">
+                        $4.20
+                    </span>
+                    <span class="stat">
+                        regular glazed
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='five'>
+                <!-- image -->
+                <img src="src/img/gallery/donuts-4.png" alt="donuts 4">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        donuts
+                    </span>
+                    <span class="cost">
+                        $4.20
+                    </span>
+                    <span class="stat">
+                        cookies & cream
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='five'>
+                <!-- image -->
+                <img src="src/img/gallery/donuts-5.png" alt="donuts 5">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        donuts
+                    </span>
+                    <span class="cost">
+                        $4.20
+                    </span>
+                    <span class="stat">
+                        pink sprinkles
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <li class="panels" data-name='five'>
+                <!-- image -->
+                <img src="src/img/gallery/donuts-6.png" alt="donuts 6">
+                <!-- image -->
+
+                <!-- text -->
+                <p class="text">
+                    <!-- text [ span ] -->
+                    <span class="name">
+                        donuts
+                    </span>
+                    <span class="cost">
+                        $4.20
+                    </span>
+                    <span class="stat">
+                        choc sprinkles
+                    </span>
+                    <!-- text [ span ] -->
+                </p>
+                <!-- text -->
+            </li>
+            <!-- gallery [ panels ] : data set [ donuts || five ] -->
+            
+
+        </ul>
+        <!-- main ul [ filter ] -->
+
+        <!-- main [ title ] -->
+        <h3>gallery</h3>
+        <!-- main [ title ] -->
+
+        <!-- main ul [ list ] -->
+        <ul class="list">
+
+            <!-- items -->
+            <li class="items">
+                <img src="../coffee.jpg" alt="gallery : 1" class="img-main">
+            </li>
+            <li class="items">
+                <img src="../jug.jpg" alt="gallery : 2" class="img-main">
+            </li>
+            <li class="items">
+                <img src="../meal.jpg" alt="gallery : 3" class="img-main">
+            </li>
+            <li class="items">
+                <img src="../taps.jpg" alt="gallery : 4" class="img-main">
+            </li>
+            <li class="items">
+                <img src="../shop.jpg" alt="gallery : 5" class="img-main">
+            </li>
+            <li class="items">
+                <img src="../pancakes.jpg" alt="gallery : 6" class="img-main">
+            </li>
+            <!-- items -->
+
+        </ul>
+        <!-- main ul [ list ] -->
+
+    </main>
+    <!-- main [ main ] -->
+
+    <!-- section [ information ] -->
+    <section class="wrapper" id="information">
+
+        <!-- article [ content ] -->
+        <article class="content">
+
+            <!-- elmnts -->
+            <div class="elmnts">
+                <h4>operating hours</h4>
+                <!-- list -->
+                <ul class="list">
+                    <!-- items -->
+                    <li class="items">
+                        <!-- day | dots | time -->
+                        <span class="day">sunday</span>
+                        <span class="dots">......</span>
+                        <span class="time">8AM - 3PM</span>
+                    </li>
+                    <li class="items">
+                        <span class="day">monday</span>
+                        <span class="dots">......</span>
+                        <span class="time">8AM - 3PM</span>
+                    </li>
+                    <li class="items">
+                        <span class="day">tuesday</span>
+                        <span class="dots">......</span>
+                        <span class="time">8AM - 3PM</span>
+                    </li>
+                    <li class="items">
+                        <span class="day">wednesday</span>
+                        <span class="dots">......</span>
+                        <span class="time">8AM - 3PM</span>
+                    </li>
+                    <li class="items">
+                        <span class="day">thursday</span>
+                        <span class="dots">......</span>
+                        <span class="time">8AM - 3PM</span>
+                    </li>
+                    <li class="items">
+                        <span class="day">friday</span>
+                        <span class="dots">......</span>
+                        <span class="time">8AM - 3PM</span>
+                    </li>
+                    <li class="items">
+                        <span class="day">saturday</span>
+                        <span class="dots">......</span>
+                        <span class="time">8AM - 3PM</span>
+                        <!-- day | dots | time -->
+                    </li>
+                    <!-- items -->
+                </ul>
+                <!-- list -->
+            </div>
+            <div class="elmnts">
+                <h4>store location</h4>
+
+                <!-- google [ maps ] -->
+                <div class="map">
+                
+                    <!-- address -->
+                    <p class="address">
+                        <!-- icon [ map marker ] -->
+                        <i class="fas fa-map-marker-alt"></i>
+                        <!-- icon [ map marker ] -->
+                        100 Seagrass Crescent, Point Cook 3030
+                    </p>
+                    <!-- address -->
+
+                </div>
+                <!-- google [ maps ] -->
+            
+            </div>
+            <!-- elmnts -->
+
+        </article>
+        <!-- article [ content ] -->
+
+    </section>
+    <!-- section [ information ] -->
+
+    <!-- footer [ footer ] -->
+    <footer class="footer">
+
+        <!-- article [ content ] -->
+        <article class="content">
+
+            <!-- elmnts -->
+            <div class="elmnts">
+
+                <!-- footer [ title ] -->
+                <h3>footer title</h3>
+                <!-- footer [ title ] -->
+
+            </div>
+            <div class="elmnts">
+
+            </div>
+            <!-- elmnts -->
+
+            
+
+        </article>
+        <!-- article [ content ] -->
+        
+
+    </footer>
+    <!-- footer [ footer ] -->
+
+</div>
+<!-- page -->
+    
+
+</body>
+</html>

@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Staatliches&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+
+    --font-staat: 'Staatliches', cursive;
+    --font-condensed: 'Open Sans Condensed', sans-serif;
+
+    --clr-cream: rgb(223, 180, 141); 
+    --clr-peach: rgb(214, 143, 115);
+
+    --clr-moccha: rgb(104, 81, 50);
+
+    --clr-darkgrey: rgb(29, 28, 27);
+}
+.desktop {display: none;}
+body {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.page {
+
+    // cream + peach
+    // background: rgb(214, 143, 115);
+    // cream
+    // background: rgb(223, 180, 141);
+
+    background: var(--clr-cream);
+
+    background: var(--clr-darkgrey);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0px 15px;
+
+
+    .logo {
+        border: 1px solid #FFF;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+    }
+    .btn {
+        background: none;
+        border: none;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+}
+
+nav {
+    display: none;
+}
+
+section {
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    position: relative;
+
+    margin-bottom: 20vh;
+    
+    // dev
+    border: 2px solid orangered;
+
+    // article [ content ]
+    article {
+            
+        position: relative;
+        height: 100%;
+        height: 100vh;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        // dev
+        border: 2px solid darkblue;
+        
+    }
+    .elmnts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        // dev
+        border: 2px solid limegreen;
+    }
+
+    // section landing large [ title ]
+    h1 {
+        font-size: 12rem;
+        // transform: rotateZ(-90deg) translateY(-25%) translateX(-45%);
+        // max-width: 450px;
+        text-transform: uppercase;
+        position: fixed;
+        line-height: 0.9;
+        top: 15%;
+        left: 12%;
+        font-family: var(--font-staat);
+        color: #FFF;
+        // dev
+        border: 2px solid orangered;
+    }
+    // section information welcome [ title ]
+    h2 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 3rem;
+        text-transform: uppercase;
+        border-bottom: 3px solid #FFF;
+        z-index: 1;
+        color: #FFF;
+        
+    }
+    // section landing text [ title ]
+    h3 {
+        font-size: 2.1rem;
+        margin-left: 10px;
+        text-transform: capitalize;
+        color: #FFF;
+    }
+    // section [ list heading ]
+    h4 {
+        font-size: 2rem;
+        color: #FFF;
+        margin-left: 10px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+
+    }
+    // section [ text ]
+    .text {
+        font-size: 1.15rem;
+        line-height: 1.6;
+        margin-left: 10px;
+        margin-top: 25px;
+        color: #FFF;
+        font-family: var(--font-condensed);
+    }
+
+    // section landing image [ img-landing ] : banner image
+    .img-landing {
+        position: absolute;
+        left: 75%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 300px;
+    }
+
+    // section information image [ img-information ] : information image
+    .img-information {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        max-height: 300px;
+    }
+    // section information ul [ list ] : operating hours
+    .list {
+        width: 100%;
+        border: 2px solid #000;
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #FFF;
+            font-family: var(--font-condensed);
+            font-size: 1.35rem;
+            list-style-type: none;
+            text-transform: capitalize;
+            width: 100%;
+        }
+        .items:nth-child(1) {
+            margin-top: 25px;
+        }
+        .items:last-child {
+            margin-bottom: 25px;
+        }
+        span {
+            width: 100%;
+        }
+    }
+    // section information div [ map ] : google maps
+    .map {
+        height: 250px;
+        width: 100%;
+        border: 2px solid #000;
+        position: relative;
+    }
+    .address {
+        background: #FFF;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: darkslategray;
+        text-decoration: underline;
+        margin-top: 10px;
+        padding: 2px 5px;
+        font-size: 1.1rem;
+
+        font-family: var(--font-staat);
+
+
+    }
+    .address i {
+        border: 2px solid red;
+    }
+}
+
+#landing {background: var(--clr-moccha);}
+
+#introduction {background: var(--clr-darkgrey);}
+
+#information {background: var(--clr-darkgrey);}
+
+main {
+    background: var(--clr-darkgrey);
+    background: #FFF;
+    
+    padding: 25px;
+    margin-bottom: 20vh;
+    position: relative;
+    z-index: 1;
+
+    // dev
+    border: 2px solid orangered;
+
+    // main [ title ]
+    h3 {
+        font-size: 2.1rem;
+        color: #000;
+        text-transform: capitalize;
+        letter-spacing: 0.1rem;
+        margin-bottom: 25px;
+        margin-left: 25px;
+        padding-top: 25px;
+        max-width: 95px;
+        border-bottom: 2px solid #000;
+    }
+
+    // main ul [ filter ] : filter selection list
+    .filter {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        gap: 10px;
+
+        padding: 10px;
+        width: 100%;
+        // dev
+        background: lightcoral;
+
+        // filter li [ items ]
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            
+            border: 2px solid red;
+        }
+    }
+
+    // main ul [ gallery ] : filter interaction list
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(85px, auto);
+        gap: 10px;
+        padding: 10px;
+        // dev
+        border: 2px solid red;
+        .panels {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            // dev
+            border: 2px solid #000;
+
+            animation-name: center;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+        img {
+            height: 85px;
+            max-width: 75px;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            font-family: var(--font-staat);
+            font-size: 0.95rem;
+            margin-top: 10px;
+            text-align: center;
+            
+            span {
+                border: 2px solid limegreen;
+                width: 100%;
+            }
+            // dev
+            border: 2px solid orangered;
+        }
+    }
+
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        gap: 10px;
+        padding: 10px;
+        position: relative;
+        height: 100vh;
+        min-height: 100vh;
+        width: 100%;
+        background: var(--clr-darkgrey);
+
+        // dev
+        border: 2px solid darkblue;
+
+        // list li [ items ]
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            
+            // dev
+            border: 2px solid orangered;
+        }
+        // list items [ image ]
+        img {
+            max-height: 100%;
+            max-width: 100%;
+    
+            height: 100%;
+            width: 100%;
+    
+            object-fit: cover;
+        }
+    }
+    
+}
+
+footer {
+    background: var(--clr-moccha);
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    position: relative;
+    
+    // dev
+    border: 2px solid orangered;
+    
+    // footer article [ content ]
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        height: 100vh;
+        width: 100%;
+        background: var(--clr-moccha);
+
+        // dev
+        border: 2px solid darkblue;
+    }
+    // footer article layout [ elmnts ]
+    .elmnts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+        
+        // dev
+        border: 2px solid limegreen;
+    }
+}
+
+// filter list element properties
+.hide-image {
+    display: none;
+}
+.show-image {
+    display: flex;
+}
+
+// animation [ center ]
+@keyframes center {
+
+    from {transform: translateY(20px);}
+    to {transform: translateY(0px);}
+
+}
+
+/*
+    media query [ tablet ]
+
+    assign sections display props from [ flex - grid ] or [ flex = row ]
+
+*/
+@media (min-width: 760px) {
+    .mobile {display:none;}
+
+    section, footer {
+        article {
+            flex-direction: row;
+        }
+    }
+
+    main {
+        .gallery {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+}
+
+/*
+    media query [ laptop ]
+
+    assign main ul list display props from [ grid col = 2 ] to [ grid col = 3 ]
+
+*/
+@media (min-width: 900px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        header,section,main,footer {max-width: 1920px;}
+    }
+    main {
+        .list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
