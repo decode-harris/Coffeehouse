@@ -8,8 +8,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
 
-    <!-- js -->
+    <!-- js [ filter gallery ] -->
     <script defer src="../../src/js/index.js"></script>
+
+    <!-- js [ nav menu ] -->
+    <script defer src="../../src/js/nav.js"></script>
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/4dff4a55ad.js" crossorigin="anonymous"></script>
@@ -19,22 +22,30 @@
 
 <!-- page -->
 <div class="page">
-
+    
     <!-- header -->
     <header class="header">
         <!-- logo [ center ] -->
-        <div class="logo"></div>
+        <div class="logo">
+            <!-- icon [ mug ] -->
+            <i class="fas fa-mug-hot"></i>
+            <!-- icon [ mug ] -->
+        </div>
         <!-- logo [ center ] -->
 
         <!-- button [ menu ] -->
-        <button class="btn" id="menu">menu</button>
+        <button class="btn" id="menu">
+            <!-- icon [ bars ] -->
+            <i class="fas fa-bars"></i>
+            <!-- icon [ bars ] -->
+        </button>
         <!-- button [ menu ] -->
 
     </header>
     <!-- header -->
 
     <!-- nav -->
-    <nav>
+    <nav id="nav">
         <!-- list -->
         <ul class="list">
             <!-- items -->
@@ -66,6 +77,12 @@
             <img src="img-landing.png" alt="landing image" class="img-landing">
             <!-- lrg image -->
 
+            <!-- button [ welcome ] -->
+            <button class="btn-landing">
+                <a href="#introduction">welcome</a>
+            </button>
+            <!-- button [ welcome ] -->
+
         </article>
         <!-- article [ content ] -->
     
@@ -81,20 +98,21 @@
             <!-- elmnts -->
             <div class="elmnts">
 
-                <!-- title & tagline -->
+                <!-- med-lrg [ title ] -->
                 <h2 class="title">welcome</h2>
-                <!-- title & tagline -->
+                <!-- med-lrg [ title ] -->
 
-                <!-- img [ more ] -->
-                <img src="img-information.png" alt="information image" class="img-information">
-                <!-- img [ more ] -->
+                <!-- img [ introduction ] -->
+                <img src="src/img/content/img-introduction.png" alt="introduction image" class="img-introduction">
+                <!-- img [ introduction ] -->
                 
             </div>
             <div class="elmnts">
 
-                
+                <!-- text [ title ] -->
                 <h3 >cafe resonance</h3>
-                
+                <!-- text [ title ] -->
+
                 <!-- text -->
                 <p class="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt!
@@ -111,7 +129,7 @@
 
     </section>
     <!-- section [ introduction ] -->
-
+    
     <!-- main [ main ] -->
     <main class="main">
 
@@ -252,7 +270,7 @@
                         $3.75
                     </span>
                     <span class="stat">
-                        hot chocolate
+                        hot choc
                     </span>
                     <!-- text [ span ] -->
                 </p>
@@ -396,7 +414,7 @@
                 <p class="text">
                     <!-- text [ span ] -->
                     <span class="name">
-                        teas
+                        tea
                     </span>
                     <span class="cost">
                         $4.75
@@ -796,45 +814,59 @@
                 <!-- text -->
             </li>
             <!-- gallery [ panels ] : data set [ donuts || five ] -->
-            
-
+        
         </ul>
         <!-- main ul [ filter ] -->
-
-        <!-- main [ title ] -->
-        <h3>gallery</h3>
-        <!-- main [ title ] -->
-
-        <!-- main ul [ list ] -->
-        <ul class="list">
-
-            <!-- items -->
-            <li class="items">
-                <img src="../coffee.jpg" alt="gallery : 1" class="img-main">
-            </li>
-            <li class="items">
-                <img src="../jug.jpg" alt="gallery : 2" class="img-main">
-            </li>
-            <li class="items">
-                <img src="../meal.jpg" alt="gallery : 3" class="img-main">
-            </li>
-            <li class="items">
-                <img src="../taps.jpg" alt="gallery : 4" class="img-main">
-            </li>
-            <li class="items">
-                <img src="../shop.jpg" alt="gallery : 5" class="img-main">
-            </li>
-            <li class="items">
-                <img src="../pancakes.jpg" alt="gallery : 6" class="img-main">
-            </li>
-            <!-- items -->
-
-        </ul>
-        <!-- main ul [ list ] -->
 
     </main>
     <!-- main [ main ] -->
 
+    <!-- section [ banner ] -->
+    <section class="wrapper" id="banner"></section>
+    <!-- section [ banner ] -->
+
+    <!-- section [ gallery ] -->
+    <section class="wrapper" id="gallery">
+
+        <!-- article [ content ] -->
+        <article class="content">
+
+            <!-- main [ title ] -->
+            <h3>gallery</h3>
+            <!-- main [ title ] -->
+
+            <!-- main ul [ list ] -->
+            <ul class="list">
+
+                <!-- items -->
+                <li class="items">
+                    <img src="../coffee.jpg" alt="gallery : 1" class="img-main">
+                </li>
+                <li class="items">
+                    <img src="../jug.jpg" alt="gallery : 2" class="img-main">
+                </li>
+                <li class="items">
+                    <img src="../meal.jpg" alt="gallery : 3" class="img-main">
+                </li>
+                <li class="items">
+                    <img src="../taps.jpg" alt="gallery : 4" class="img-main">
+                </li>
+                <li class="items">
+                    <img src="../shop.jpg" alt="gallery : 5" class="img-main">
+                </li>
+                <li class="items">
+                    <img src="../pancakes.jpg" alt="gallery : 6" class="img-main">
+                </li>
+                <!-- items -->
+
+            </ul>
+            <!-- main ul [ list ] -->
+
+        </article>
+        <!-- article [ content ] -->
+    </section>
+    <!-- section [ gallery ] -->
+    
     <!-- section [ information ] -->
     <section class="wrapper" id="information">
 
@@ -922,14 +954,42 @@
         <article class="content">
 
             <!-- elmnts -->
+            <div class="elmnts"></div>
             <div class="elmnts">
 
-                <!-- footer [ title ] -->
-                <h3>footer title</h3>
-                <!-- footer [ title ] -->
-
-            </div>
-            <div class="elmnts">
+                <!-- list -->
+                <ul class="list">
+                    <!-- items -->
+                    <li class="items">
+                        <!-- link [ facebook ] -->
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <!-- icon -->
+                            <i class="fab fa-facebook-square"></i>
+                            <!-- icon -->
+                        </a>
+                        <!-- link [ facebook ] -->
+                    </li>
+                    <li class="items">
+                        <!-- link [ email ] -->
+                        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                            <!-- icon -->
+                            <i class="fas fa-envelope-square"></i>
+                            <!-- icon -->
+                        </a>
+                        <!-- link [ email ] -->
+                    </li>
+                    <li class="items">
+                        <!-- link [ instagram ] -->
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <!-- icon -->
+                            <i class="fab fa-instagram-square"></i>
+                            <!-- icon -->
+                        </a>
+                        <!-- link [ instagram ] -->
+                    </li>
+                    <!-- items -->
+                </ul>
+                <!-- list -->
 
             </div>
             <!-- elmnts -->
