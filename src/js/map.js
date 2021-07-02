@@ -27,28 +27,28 @@ function initMap() {
 initMap();
 
 
-// function [ mql ] : media query listener
-mql = (mq) => {
+// // function [ mql ] : media query listener
+// mql = (mq) => {
 
-    // validte if [ media query ] matches desktop
-    if (mq.matches) {
+//     // validte if [ media query ] matches desktop
+//     if (mq.matches) {
 
-        // test
-        console.log('media query : desktop');
-    }
-    // validte if [ media query ] matches mobile
-    else {
+//         // test
+//         console.log('media query : desktop');
+//     }
+//     // validte if [ media query ] matches mobile
+//     else {
 
-        // test
-        console.log('media query : mobile');
-    }
-}
-// media query selector
-let mq = window.matchMedia('min-width:760px');
+//         // test
+//         console.log('media query : mobile');
+//     }
+// }
+// // media query selector
+// let mq = window.matchMedia('min-width:760px');
 
-// init [ mql ] function
-mql(mq);
+// // init [ mql ] function
+// mql(mq);
 
-// listener event [ mql]
-mql.addEventListener(mql);
+// // listener event [ mql]
+// mql.addEventListener(mql);
 
