@@ -1,11 +1,19 @@
 # Coffeehouse
 
-SPA Business Website [ Coffee House ]
+SPA Business Website [ Cafe Resonance ]
 <br>
 Showcasing
   <br>
-  semantic markup
+  semantic HTML5
   <br>
-  SASS implementation
+  SASS Implementation
   <br>
-  Vanilla Javascript
+  Vanilla Javascript Modules
+  
+Features
+  <br>
+  Side Navigation
+  <br>
+  Filtered Menu List
+  <br>
+  Modal Lightbox Gallery
